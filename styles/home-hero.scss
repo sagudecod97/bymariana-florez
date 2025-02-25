@@ -35,3 +35,16 @@
     padding: 10px 40px;
   }
 }
+
+.quote {
+  background-color: variables.$black;
+
+  &__text {
+    color: variables.$white;
+    text-align: center;
+    padding: 20px 7% 50px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+  }
+}
