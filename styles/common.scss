@@ -1,13 +1,14 @@
-@use "./variables.scss";
+@use "./variables.scss" as variables;
 
 .header {
   background-color: variables.$black;
+  margin-bottom: 50px; // Erase later
 
   &__list {
     display: flex;
     justify-content: space-between;
     padding: 20px 85px;
-    max-width: 1200px;
+    margin: 0 auto;
 
     &--item {
       font-weight: bold;
@@ -19,8 +20,6 @@
 }
 
 .footer {
-  background-color: rebeccapurple;
-
   &__img {
     width: 80px;
     height: 80px;

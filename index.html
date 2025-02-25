@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.scss" />
-    <link rel="stylesheet" href="./styles/common.scss" />
     <title>ByMariana - Flowers</title>
   </head>
 
   <body>
     <header class="header">
-      <nav class="header__nav">
+      <nav class="header__nav container">
         <ul class="header__list">
           <li class="header__list--item"><a href="">The designer</a></li>
           <li class="header__list--item"><a href="">Projects</a></li>
@@ -20,6 +18,33 @@
         </ul>
       </nav>
     </header>
+
+    <main>
+      <div class="flowers">
+        <img
+          class="flowers__img"
+          src="./assets/images/logo-flowers-blanco.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="images-container container">
+          <img
+            class="images-container__img"
+            src="./assets/images/flowers-home-right.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="images-container__img"
+            src="./assets/images/flowers-home-left.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+        <button class="about-btn"><a href="/">About the designer</a></button>
+      </div>
+    </main>
 
     <footer class="footer">
       <a href="/"
