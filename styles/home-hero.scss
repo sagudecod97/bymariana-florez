@@ -48,3 +48,44 @@
     line-height: 30px;
   }
 }
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  &__item {
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 1px solid variables.$black;
+
+    &--text {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  .--amber {
+    color: variables.$amber-spice-orange;
+    border-color: variables.$amber-spice-orange;
+  }
+
+  .--green {
+    color: variables.$mass-green-gray;
+    border-color: variables.$mass-green-gray;
+  }
+
+  .--ocean {
+    color: variables.$ocean-wave-blue;
+    border-color: variables.$ocean-wave-blue;
+  }
+
+  .--crimson {
+    color: variables.$crimson-punch-pink;
+    border-color: variables.$crimson-punch-pink;
+  }
+
+  .--wine {
+    color: variables.$dark-red-wine;
+    border-color: variables.$dark-red-wine;
+  }
+}
