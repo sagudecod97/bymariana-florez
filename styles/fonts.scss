@@ -1,15 +1,15 @@
 /* shree-Devanagari */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Shree-Devanagari";
   font-style: normal;
-  src: url("/assets/fonts/ShreeDev0714.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/ShreeDev0714.woff2") format("woff2");
 }
 
 // NT-Vanilla-Alternative
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "NT-Vanilla-Alternative";
   font-style: normal;
-  src: url("/assets/fonts/NT-Vanilla-Alternative.otf") format("otf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/NT-Vanilla-Alternative.otf") format("otf");
 }
