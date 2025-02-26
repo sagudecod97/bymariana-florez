@@ -44,8 +44,8 @@
     text-align: center;
     padding: 20px 7% 50px;
     font-size: 20px;
-    font-weight: 100;
     line-height: 30px;
+    font-style: italic;
   }
 }
 
@@ -88,4 +88,71 @@
     color: variables.$dark-red-wine;
     border-color: variables.$dark-red-wine;
   }
+}
+
+.proyect {
+  .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+
+    &__img {
+      width: 350px;
+    }
+  }
+
+  &__title {
+    font-family: variables.$nt-vanilla-alternative;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__img-title {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__description {
+    text-align: center;
+    padding: 20px 7% 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__cta {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    color: variables.$black;
+    background: none;
+    border-radius: 100%;
+    border: 1px solid variables.$black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &--text {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.--last-proyect {
+  padding-bottom: 80px;
 }
