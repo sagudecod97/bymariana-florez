@@ -1,0 +1,110 @@
+@use "./variables.scss" as variables;
+
+.--about-me {
+  &__background {
+    background-color: variables.$amber-spice-orange;
+  }
+
+  &__border {
+    border-color: variables.$amber-spice-orange;
+  }
+
+  &__color {
+    color: variables.$amber-spice-orange;
+  }
+}
+
+.title {
+  padding: 100px 0 50px 0;
+
+  &__img {
+    display: block;
+    width: 600px;
+  }
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__img {
+    width: 50%;
+    height: 600px;
+    object-fit: fill;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    width: 100%;
+    text-align: end;
+    font-size: 12px;
+    padding-right: 30px;
+  }
+}
+
+.description {
+  padding: 70px 90px;
+}
+
+.journey-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__img {
+    width: 400px;
+    height: 600px;
+    object-fit: fill;
+    margin-bottom: 30px;
+  }
+
+  .--img-padding {
+    padding-left: 50px;
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    justify-self: flex-end;
+    font-size: 12px;
+    padding-left: 550px;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 70px 90px;
+  }
+
+  &__main-img {
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+    padding: 0 90px;
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 90px;
+
+  &__img {
+    width: 48%;
+    height: 600px;
+    object-fit: fill;
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  &__text {
+    width: 100%;
+    text-align: end;
+    justify-self: flex-end;
+    font-size: 12px;
+  }
+
+  .--text-left {
+    text-align: start;
+  }
+}

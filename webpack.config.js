@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./index.js",
+  entry: { index: "./index.js", aboutMe: "./about-me.js" },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -14,7 +14,7 @@ module.exports = {
       // SASS/SCSS Loader
       {
         test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, , "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       // Image Loader
       {
@@ -38,10 +38,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html", // Source HTML
+      template: "./index.html", // Source HTML -
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about-me.html",
+      template: "./about-me.html",
+      chunks: ["aboutMe"],
     }),
     new MiniCssExtractPlugin({
-      filename: "styles.css", // ✅ Output CSS file
+      filename: "[name].css", // ✅ Output CSS file
     }),
   ],
   devServer: {
