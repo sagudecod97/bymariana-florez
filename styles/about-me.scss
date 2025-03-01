@@ -30,8 +30,9 @@
   &__img {
     width: 50%;
     height: 600px;
-    object-fit: fill;
     margin-bottom: 30px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__text {
@@ -50,6 +51,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
+
+  &__title {
+    width: 100%;
+    padding: 0 3%;
+  }
 
   &__img {
     width: 400px;
@@ -106,5 +113,44 @@
 
   .--text-left {
     text-align: start;
+  }
+}
+
+.project-tiles {
+  background-color: variables.$black;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__img {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    color: variables.$white;
+    text-align: end;
+  }
+}
+
+.proyect-cta {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: variables.$black;
+  background: none;
+  border-radius: 100%;
+  border: 1px solid variables.$black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
   }
 }
