@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     index: "./index.js",
     aboutMe: "./about-me.js",
-    proyects: "./projects.js",
+    projects: "./projects.js",
     denim: "./projects/denim.js",
   },
   output: {
