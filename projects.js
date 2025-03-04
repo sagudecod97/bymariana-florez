@@ -1,6 +1,6 @@
 import "./index.scss";
 import "./styles/common.scss";
-import "./styles/proyects.scss";
+import "./styles/projects.scss";
 
 if (module.hot) {
   module.hot.accept();

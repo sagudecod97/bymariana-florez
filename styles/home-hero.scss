@@ -92,7 +92,7 @@
 }
 
 .proyect {
-  .images-container {
+  &-images-container {
     display: flex;
     justify-content: center;
     gap: 40px;

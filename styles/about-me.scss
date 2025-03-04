@@ -116,6 +116,14 @@
   }
 }
 
+.recent-projects {
+  padding: 50px 90px;
+
+  &__img {
+    width: 500px;
+  }
+}
+
 .project-tiles {
   background-color: variables.$black;
   padding: 40px 0;
