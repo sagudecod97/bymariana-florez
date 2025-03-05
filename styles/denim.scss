@@ -1,1 +1,15 @@
 @use "./variables.scss" as variables;
+
+.--denim {
+  &__background {
+    background-color: variables.$amber-spice-orange;
+  }
+
+  &__border {
+    border-color: variables.$amber-spice-orange;
+  }
+
+  &__color {
+    color: variables.$amber-spice-orange;
+  }
+}
