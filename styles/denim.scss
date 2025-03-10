@@ -190,6 +190,41 @@
       padding-top: 0;
     }
   }
+
+  /* First third look grid*/
+  .--first-third-item {
+    grid-column: 2/3;
+    grid-row: 1/10;
+    height: 600px;
+  }
+
+  .--second-third-item {
+    grid-column: 1/2;
+    grid-row: 5/15;
+    height: 700px;
+  }
+
+  .--third-third-item {
+    grid-column: 2/3;
+    grid-row: 14/24;
+    height: 600px;
+  }
+
+  .--fourth-third-item {
+    grid-column: 1/2;
+    grid-row: 20/25;
+    height: 600px;
+  }
+
+  .--fifth-third-item {
+    grid-column: 2/3;
+    grid-row: 24/24;
+    height: auto;
+
+    .item__list {
+      padding-top: 20px;
+    }
+  }
 }
 
 .item {
@@ -269,4 +304,14 @@
   grid-template-columns: 47% 47%;
   row-gap: 0px;
   column-gap: 5%;
+}
+
+.--container-third {
+  position: relative;
+  bottom: 100px;
+  grid-template-rows: repeat(22, 50px);
+  grid-template-columns: 48% 48%;
+  padding-bottom: 0;
+  row-gap: 0px;
+  justify-content: space-between;
 }
