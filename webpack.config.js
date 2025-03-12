@@ -69,6 +69,10 @@ module.exports = {
     port: 3000, // Dev server port
     open: true,
     hot: true, // Enable Hot Module Replacement
+    liveReload: true, // Ensures auto-reload on changes
+    client: {
+      reconnect: true, // Tries to reconnect automatically
+    },
   },
   mode: "development", // or 'production'
 };
