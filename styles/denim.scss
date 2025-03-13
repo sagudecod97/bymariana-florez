@@ -75,11 +75,23 @@
     }
   }
 
+  &__section-title {
+    font-family: variables.$league;
+    font-size: 65px;
+    font-weight: 100;
+    padding: 40px 10%;
+  }
+
   &__quoting {
     width: 100%;
     color: variables.$white;
     text-align: end;
     padding-right: 10%;
+  }
+
+  &__paragraph {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -308,6 +320,39 @@
   }
 }
 
+.animations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 90px 0;
+
+  &__item {
+    position: relative;
+    width: 42%;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-text {
+      font-family: variables.$gabarito;
+      font-size: 135px;
+      font-weight: bold;
+      color: variables.$white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .--right {
+      text-align: end;
+    }
+  }
+}
+
 .--ideas-organized {
   font-size: 95px;
   width: 100%;
@@ -355,10 +400,41 @@
   margin: 150px auto 0 auto;
 }
 
+.--no-padding-top {
+  padding-top: 0;
+}
+
 .--capsule-cta {
   background-color: variables.$black;
   color: variables.$white;
-  margin: 20px auto 100px auto;
+  margin: 20px auto 0px auto;
+}
+
+.--margin-bottom {
+  padding: 0;
+  margin-bottom: 90px;
+}
+
+.--relative-top {
+  position: relative;
+  top: 140px;
+}
+
+.--first-p {
+  position: relative;
+  bottom: 90px;
+  padding-right: 17%;
+}
+
+.--second-p {
+  position: relative;
+  bottom: 90px;
+  padding-right: 14%;
+}
+
+.--third-p {
+  position: relative;
+  bottom: 90px;
 }
 
 .--container-first {

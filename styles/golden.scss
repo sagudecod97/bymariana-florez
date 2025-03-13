@@ -1,0 +1,181 @@
+@use "./variables.scss" as variables;
+
+.--golden {
+  &__background {
+    background-color: variables.$dark-red-wine;
+  }
+
+  &__border {
+    border-color: variables.$dark-red-wine;
+  }
+
+  &__color {
+    color: variables.$dark-red-wine;
+  }
+}
+
+.golden {
+  &__hero {
+    width: 100%;
+  }
+
+  &__intro {
+    position: relative;
+    padding: 80px 0;
+
+    .--absolute {
+      position: absolute;
+      top: -80px;
+      left: 8%;
+      height: 600px;
+    }
+
+    .--right {
+      display: block;
+      width: 500px;
+      margin: 0 2% 0 auto;
+    }
+  }
+
+  &__section-img {
+    width: 100%;
+    padding: 80px 10% 10px 10%;
+  }
+
+  &__section-p {
+    text-align: center;
+    padding: 0 15%;
+  }
+
+  &__container {
+    position: relative;
+    margin-top: 80px;
+
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      position: absolute;
+      bottom: 8%;
+      left: 0;
+      text-align: center;
+      padding: 0 15%;
+    }
+
+    .--first-p {
+      bottom: 40%;
+    }
+
+    .--second-p {
+      width: 100%;
+      bottom: 36%;
+    }
+
+    .--third-p {
+      bottom: 23%;
+      text-align: left;
+    }
+
+    .--fourth-p {
+      bottom: 14%;
+      text-align: left;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 60px 40px;
+    gap: 4%;
+
+    &-item {
+      padding-bottom: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: 500px;
+      }
+
+      ul {
+        list-style: disc;
+      }
+    }
+
+    .item-one {
+      width: 60%;
+    }
+
+    .item-two {
+      width: 35%;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .item-three {
+      width: 40%;
+    }
+
+    .item-four {
+      width: 45%;
+    }
+
+    .item-five,
+    .item-six {
+      width: 35%;
+      max-height: 600px;
+    }
+  }
+
+  &__stars {
+    width: 300px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  &__quoting {
+    width: 100%;
+    color: variables.$amber-spice-orange;
+    text-align: end;
+    padding-right: 10%;
+  }
+
+  .--padding-p-top {
+    padding-top: 60px;
+  }
+
+  .--to-top {
+    padding: 0;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+  }
+
+  .--padding-bottom {
+    padding-bottom: 60px;
+  }
+
+  .--margin-bottom {
+    margin-bottom: 50px;
+  }
+
+  .--the-process {
+    padding: 10px 30px;
+  }
+
+  .--no-padding-top {
+    padding-top: 0;
+  }
+}
+
+.--black-background {
+  background: variables.$black;
+  padding-bottom: 80px;
+}

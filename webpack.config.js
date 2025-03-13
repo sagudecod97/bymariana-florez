@@ -8,6 +8,7 @@ module.exports = {
     aboutMe: "./about-me.js",
     projects: "./projects.js",
     denim: "./projects/denim.js",
+    golden: "./projects/golden.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -59,6 +60,11 @@ module.exports = {
       filename: "projects/denim.html",
       template: "./projects/denim.html",
       chunks: ["denim"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "projects/golden.html",
+      template: "./projects/golden.html",
+      chunks: ["golden"],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css", // ✅ Output CSS file
