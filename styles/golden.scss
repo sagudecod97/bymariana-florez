@@ -157,6 +157,10 @@
         list-style: disc;
         text-align: end;
       }
+
+      p {
+        text-align: end;
+      }
     }
 
     .item-one {
@@ -272,6 +276,57 @@
       grid-column: 11/20;
       grid-row: 42/49;
     }
+
+    /* Second look grid */
+    .item-four-one {
+      grid-column: 1/10;
+      grid-row: 1/22;
+    }
+
+    .item-four-two {
+      grid-column: 11/20;
+      grid-row: 1/17;
+    }
+
+    .item-four-three {
+      grid-column: 1/10;
+      grid-row: 23/42;
+    }
+
+    .item-four-four {
+      grid-column: 11/20;
+      grid-row: 18/37;
+    }
+
+    .item-four-five {
+      grid-column: 1/10;
+      grid-row: 43/57;
+    }
+
+    .item-four-six {
+      grid-column: 11/20;
+      grid-row: 38/53;
+    }
+
+    .item-four-seven {
+      grid-column: 1/10;
+      grid-row: 58/74;
+    }
+
+    .item-four-eight {
+      grid-column: 11/20;
+      grid-row: 54/70;
+    }
+
+    .item-four-nine {
+      grid-column: 11/20;
+      grid-row: 71/90;
+    }
+
+    .item-four-ten {
+      grid-column: 1/10;
+      grid-row: 75/90;
+    }
   }
 
   &__stars {
@@ -326,7 +381,7 @@
 
   .--last-look {
     grid-template-columns: repeat(19, 1fr);
-    grid-template-rows: repeat(48, 30px);
+    grid-template-rows: repeat(89, 30px);
     padding: 100px 90px 0;
     gap: 0;
   }
