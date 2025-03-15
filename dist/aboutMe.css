@@ -1,0 +1,340 @@
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./index.scss ***!
+  \*****************************************************************************************************/
+/* shree-Devanagari */
+@font-face {
+  font-display: swap;
+  font-family: "Shree-Devanagari";
+  font-style: normal;
+  src: url(fonts/ShreeDev0714.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "NT-Vanilla-Alternative";
+  font-style: normal;
+  src: url(fonts/NT-Vanilla-Alternative.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "gabarito";
+  font-style: normal;
+  src: url(fonts/Gabarito-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "League-Script";
+  font-style: normal;
+  src: url(fonts/LeagueScript-Regular.ttf) format("truetype");
+}
+/* Reset CSS */
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font size and line height for better typography */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove outline on focused elements */
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Shree-Devanagari", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.--not-show {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.--hidden {
+  display: none;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/common.scss ***!
+  \*************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 85px;
+  margin: 0 auto;
+}
+.header__list--item {
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  margin-top: 40px;
+}
+.footer__list--item {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: #000;
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.cta__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body {
+  padding-top: 58px;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/about-me.scss ***!
+  \***************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.--about-me__background {
+  background-color: #d07a00;
+}
+.--about-me__border {
+  border-color: #d07a00;
+}
+.--about-me__color {
+  color: #d07a00;
+}
+
+.title {
+  padding: 100px 0 50px 0;
+}
+.title__img {
+  display: block;
+  width: 600px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.images-container__img {
+  width: 50%;
+  height: 600px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+.images-container__text {
+  width: 100%;
+  text-align: end;
+  font-size: 12px;
+  padding-right: 30px;
+}
+
+.description {
+  padding: 70px 90px;
+}
+
+.journey-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.journey-container__title {
+  width: 100%;
+  padding: 0 3%;
+}
+.journey-container__img {
+  width: 400px;
+  height: 600px;
+  object-fit: fill;
+  margin-bottom: 30px;
+}
+.journey-container .--img-padding {
+  padding-left: 50px;
+}
+.journey-container__text {
+  width: 100%;
+  text-align: center;
+  justify-self: flex-end;
+  font-size: 12px;
+  padding-left: 550px;
+}
+.journey-container__description {
+  width: 100%;
+  padding: 70px 90px;
+}
+.journey-container__main-img {
+  width: 100%;
+  height: 600px;
+  object-fit: fill;
+  padding: 0 90px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 90px;
+}
+.gallery__img {
+  width: 48%;
+  height: 600px;
+  object-fit: fill;
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+.gallery__text {
+  width: 100%;
+  text-align: end;
+  justify-self: flex-end;
+  font-size: 12px;
+}
+.gallery .--text-left {
+  text-align: start;
+}
+
+.recent-projects {
+  padding: 50px 90px;
+}
+.recent-projects__img {
+  width: 500px;
+}
+
+.project-tiles {
+  background-color: #000;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-tiles__img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+.project-tiles__text {
+  color: #ffffff;
+  text-align: end;
+  padding-right: 15px;
+}
+
+.proyect-cta {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: #000;
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.proyect-cta__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}

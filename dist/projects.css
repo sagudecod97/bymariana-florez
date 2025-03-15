@@ -1,0 +1,237 @@
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./index.scss ***!
+  \*****************************************************************************************************/
+/* shree-Devanagari */
+@font-face {
+  font-display: swap;
+  font-family: "Shree-Devanagari";
+  font-style: normal;
+  src: url(fonts/ShreeDev0714.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "NT-Vanilla-Alternative";
+  font-style: normal;
+  src: url(fonts/NT-Vanilla-Alternative.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "gabarito";
+  font-style: normal;
+  src: url(fonts/Gabarito-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "League-Script";
+  font-style: normal;
+  src: url(fonts/LeagueScript-Regular.ttf) format("truetype");
+}
+/* Reset CSS */
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font size and line height for better typography */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove outline on focused elements */
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Shree-Devanagari", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.--not-show {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.--hidden {
+  display: none;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/common.scss ***!
+  \*************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 85px;
+  margin: 0 auto;
+}
+.header__list--item {
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  margin-top: 40px;
+}
+.footer__list--item {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: #000;
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.cta__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body {
+  padding-top: 58px;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/projects.scss ***!
+  \***************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.projects {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(3d3c9c37e16fb94149e4.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px;
+  color: #ffffff;
+}
+.projects__img {
+  display: block;
+  width: 300px;
+}
+.projects__title {
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: "NT-Vanilla-Alternative";
+  font-weight: 100;
+}
+.projects__text {
+  text-align: end;
+  width: 25%;
+  font-weight: lighter;
+}
+
+.--golden-age {
+  background-image: url(d98ac2c6dd1b0c9972f5.png);
+}
+
+.--cells {
+  background-image: url(6a3e3ec56cfc04704ab5.png);
+}
+
+.--top-space {
+  padding-top: 80px;
+}

@@ -1,0 +1,534 @@
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./index.scss ***!
+  \*****************************************************************************************************/
+/* shree-Devanagari */
+@font-face {
+  font-display: swap;
+  font-family: "Shree-Devanagari";
+  font-style: normal;
+  src: url(fonts/ShreeDev0714.woff2) format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "NT-Vanilla-Alternative";
+  font-style: normal;
+  src: url(fonts/NT-Vanilla-Alternative.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "gabarito";
+  font-style: normal;
+  src: url(fonts/Gabarito-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "League-Script";
+  font-style: normal;
+  src: url(fonts/LeagueScript-Regular.ttf) format("truetype");
+}
+/* Reset CSS */
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font size and line height for better typography */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove outline on focused elements */
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Shree-Devanagari", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.--not-show {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.--hidden {
+  display: none;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/common.scss ***!
+  \*************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 85px;
+  margin: 0 auto;
+}
+.header__list--item {
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  margin-top: 40px;
+}
+.footer__list--item {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta {
+  width: 120px;
+  height: 120px;
+  display: block;
+  color: #000;
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.cta__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body {
+  padding-top: 58px;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/golden.scss ***!
+  \*************************************************************************************************************/
+/* Font names */
+/* Font sizes */
+/* Colors */
+/* Media quieries */
+.--golden__background {
+  background-color: #3f0e0e;
+}
+.--golden__border {
+  border-color: #3f0e0e;
+}
+.--golden__color {
+  color: #3f0e0e;
+}
+
+.golden__hero {
+  width: 100%;
+}
+.golden__intro {
+  position: relative;
+  padding: 80px 0;
+}
+.golden__intro .--absolute {
+  position: absolute;
+  top: -80px;
+  left: 8%;
+  height: 600px;
+}
+.golden__intro .--right {
+  display: block;
+  width: 500px;
+  margin: 0 2% 0 auto;
+}
+.golden__section-img {
+  width: 100%;
+  padding: 80px 10% 10px 10%;
+}
+.golden__section-p {
+  text-align: center;
+  padding: 0 15%;
+}
+.golden__container {
+  position: relative;
+  margin-top: 80px;
+}
+.golden__container-img {
+  width: 100%;
+}
+.golden__container-text {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  text-align: center;
+  padding: 0 15%;
+}
+.golden__container .--first-p {
+  bottom: 40%;
+}
+.golden__container .--second-p {
+  width: 100%;
+  bottom: 36%;
+}
+.golden__container .--third-p {
+  bottom: 23%;
+  text-align: left;
+}
+.golden__container .--fourth-p {
+  bottom: 14%;
+  text-align: left;
+}
+.golden__subtitle {
+  font-family: "League-Script";
+  color: #3f0e0e;
+  font-size: 55px;
+  width: 65%;
+  margin: 50px auto 0 auto;
+}
+.golden__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 60px 40px;
+  gap: 4%;
+}
+.golden__flex-item {
+  padding-bottom: 40px;
+}
+.golden__flex-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+.golden__flex-item ul {
+  list-style: disc;
+}
+.golden__flex .item-one {
+  width: 60%;
+}
+.golden__flex .item-two {
+  width: 35%;
+  display: flex;
+  align-items: flex-end;
+}
+.golden__flex .item-three {
+  width: 40%;
+}
+.golden__flex .item-four {
+  width: 45%;
+}
+.golden__flex .item-five,
+.golden__flex .item-six {
+  width: 35%;
+  max-height: 600px;
+}
+.golden__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(22, 50px);
+  justify-content: center;
+  gap: 40px;
+  padding: 90px 40px;
+  /* Second look grid */
+  /* Second look grid */
+  /* Second look grid */
+}
+.golden__grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.golden__grid-item ul {
+  list-style: disc;
+  text-align: end;
+}
+.golden__grid-item p {
+  text-align: end;
+}
+.golden__grid .item-one {
+  grid-column: 1/3;
+  grid-row: 1/8;
+}
+.golden__grid .item-two {
+  grid-column: 3/5;
+  grid-row: 1/8;
+}
+.golden__grid .item-three {
+  grid-column: 1/4;
+  grid-row: 8/12;
+}
+.golden__grid .item-four {
+  grid-column: 1/3;
+  grid-row: 12/18;
+}
+.golden__grid .item-five {
+  grid-column: 3/5;
+  grid-row: 12/23;
+}
+.golden__grid .item-six {
+  grid-column: 1/3;
+  grid-row: 18/22;
+}
+.golden__grid .item-six h3 {
+  font-family: "League-Script";
+  font-size: 50px;
+  text-align: center;
+  color: #3f0e0e;
+}
+.golden__grid .item-two-one {
+  grid-column: 1/6;
+  grid-row: 1/8;
+}
+.golden__grid .item-two-two {
+  grid-column: 6/9;
+  grid-row: 2/9;
+}
+.golden__grid .item-two-three {
+  grid-column: 1/6;
+  grid-row: 8/17;
+}
+.golden__grid .item-two-four {
+  grid-column: 6/10;
+  grid-row: 9/16;
+}
+.golden__grid .item-two-five {
+  grid-column: 1/6;
+  grid-row: 17/26;
+}
+.golden__grid .item-two-six {
+  grid-column: 6/10;
+  grid-row: 16/23;
+}
+.golden__grid .item-two-seven {
+  grid-column: 6/10;
+  grid-row: 23/31;
+}
+.golden__grid .item-two-eigth {
+  grid-column: 1/6;
+  grid-row: 26/31;
+}
+.golden__grid .item-three-one {
+  grid-column: 6/20;
+  grid-row: 1/10;
+}
+.golden__grid .item-three-two {
+  grid-column: 1/10;
+  grid-row: 11/26;
+}
+.golden__grid .item-three-three {
+  grid-column: 11/20;
+  grid-row: 11/25;
+}
+.golden__grid .item-three-four {
+  grid-column: 1/10;
+  grid-row: 27/40;
+}
+.golden__grid .item-three-five {
+  grid-column: 11/20;
+  grid-row: 26/41;
+}
+.golden__grid .item-three-six {
+  grid-column: 1/10;
+  grid-row: 41/49;
+}
+.golden__grid .item-three-seven {
+  grid-column: 11/20;
+  grid-row: 42/49;
+}
+.golden__grid .item-four-one {
+  grid-column: 1/10;
+  grid-row: 1/22;
+}
+.golden__grid .item-four-two {
+  grid-column: 11/20;
+  grid-row: 1/17;
+}
+.golden__grid .item-four-three {
+  grid-column: 1/10;
+  grid-row: 23/42;
+}
+.golden__grid .item-four-four {
+  grid-column: 11/20;
+  grid-row: 18/37;
+}
+.golden__grid .item-four-five {
+  grid-column: 1/10;
+  grid-row: 43/57;
+}
+.golden__grid .item-four-six {
+  grid-column: 11/20;
+  grid-row: 38/53;
+}
+.golden__grid .item-four-seven {
+  grid-column: 1/10;
+  grid-row: 58/74;
+}
+.golden__grid .item-four-eight {
+  grid-column: 11/20;
+  grid-row: 54/70;
+}
+.golden__grid .item-four-nine {
+  grid-column: 11/20;
+  grid-row: 71/90;
+}
+.golden__grid .item-four-ten {
+  grid-column: 1/10;
+  grid-row: 75/90;
+}
+.golden__stars {
+  width: 300px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.golden__quoting {
+  width: 100%;
+  color: #d07a00;
+  text-align: end;
+  padding-right: 10%;
+}
+.golden .--padding-p-top {
+  padding-top: 60px;
+}
+.golden .--to-top {
+  padding: 0;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+}
+.golden .--padding-bottom {
+  padding-bottom: 60px;
+}
+.golden .--margin-bottom {
+  margin-bottom: 70px;
+}
+.golden .--the-process {
+  padding: 10px 30px;
+}
+.golden .--no-padding-top {
+  padding-top: 0;
+}
+.golden .--second-look {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(31, 50px);
+  padding: 100px 60px;
+}
+.golden .--last-look {
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: repeat(1, 30px);
+  padding: 100px 90px 0;
+  gap: 0;
+}
+.golden .--pink-text {
+  color: #da0044;
+}
+.golden .--margin-top-no-bottom {
+  margin: 100px auto 0 auto;
+}
+.golden .--final-flex {
+  justify-content: space-between;
+  padding: 0 15% 60px 15%;
+}
+.golden .--final-flex div {
+  width: 48%;
+  padding-bottom: 20px;
+}
+.golden .--padding-sides {
+  padding: 0 40px;
+}
+
+.--black-background {
+  background: #000;
+  padding-bottom: 80px;
+}
+
+.--pale-background {
+  background: #ebe0ca;
+  padding-bottom: 80px;
+}
